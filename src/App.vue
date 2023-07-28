@@ -1,27 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <TodoList />
+    <AddTodo />
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import TodoList from "./components/TodoList.vue";
+import AddTodo from "./components/AddTodo.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    TodoList,
+    AddTodo,
   },
 });
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
